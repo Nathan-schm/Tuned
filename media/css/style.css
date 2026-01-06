@@ -1,0 +1,202 @@
+body{
+    background-color: #b4b4b4;
+    margin: 0px;
+}
+
+
+/* header */
+header{
+    background-color: #2B2B2B;
+    display: flex;
+    justify-content: space-between;
+    padding:1rem 4rem ;
+    align-items: center;
+    position: fixed;
+}
+
+/* le logo et le titre de la page */
+.logo img   {
+    border-radius: 5rem;
+    display: flex;
+}
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: aliceblue;
+}
+.logo .logoamg{
+    padding-left: 3rem;
+}
+
+
+/* les boutons des liens */
+.lien{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.lien a{
+    padding: 0.7rem;
+    margin: 0.5rem;
+    color: rgb(0, 0, 0);
+    border-radius: 0.5rem;
+    background-color: #D9D9D9;
+    text-decoration: none;
+}
+.lienbrabus{
+    transition: transform 0.3s ease;
+    border: 0.2rem solid #000000;
+}
+.lienmansory{
+    transition: transform 0.3s ease;
+    border: 0.2rem solid #D2B55B;
+}
+.lienabt{
+    transition: transform 0.3s ease;
+    border: 0.2rem solid #228BFF;
+}
+.lienamg{
+    transition: transform 0.3s ease;
+    border: 0.2rem solid #FF2E2E;
+}
+
+
+/* hover sur les boutons du header*/
+.lienbrabus:hover{
+    transform: scale(1.04);
+}
+.lienmansory:hover{
+    transform: scale(1.04); 
+}
+.lienabt:hover{
+    transform: scale(1.04);
+}
+.lienamg:hover{
+    transform: scale(1.04);
+}
+
+
+/* titre principal */
+.titre{
+    text-align: center;
+    font-size: 2.2em;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+}
+
+/* titre de chaque contenu*/
+.sous-titre{
+    font-size: 1.6em;
+}
+
+/* footer */
+footer{
+    background-color: #2B2B2B;
+    display: flex;
+    justify-content: space-between;
+    padding:2rem 5rem ;
+}
+
+
+/* footer partie gauche */
+footer img{
+    border-radius: 3rem;
+}
+.footer_gauche{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: aliceblue;
+    font-size: 1.3em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.footer_gauche p{
+    padding-left: 2rem;
+}
+
+
+/* footer partie droite */
+.footer_droite {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.footer_droite a{
+    padding-left: 1rem;
+    color: white;
+}
+.footer_droite .auteur{
+    padding-left: 2rem;
+    color: #228BFF;
+}
+.footer_droite .contact{
+    color: #228BFF;
+}
+
+/* changement de couleur sur les liens */
+.footer_gauche a{
+    color: white;
+    text-decoration: none;
+}
+.brabus_footer:hover{
+color: #000000;
+}
+.mansory_footer:hover{
+    color: #D2B55B;
+}
+.abt_footer:hover{
+    color: #228BFF;
+}
+.amg_footer:hover{
+    color: #FF2E2E;
+}
+.contact:hover{
+    color: white;
+}
+
+
+
+
+/*responsive design pour le header et le footer*/
+
+@media (max-width: 393px){
+    header{
+        padding-left: 10px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .logo img{
+        width: 20%;
+        height: auto;
+        align-items: start;
+    }
+    .titre{
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+    .lien{
+        padding-left: 40px;
+    }
+    .lien a{
+        padding: 1px;
+    }
+    footer {
+    font-size: 10px;
+    padding-left: 10px;
+    flex-direction: column;
+    align-items: start;
+    text-align: center;
+  }
+  .footer_droite a{
+    padding: 4px;
+  }
+  .footer_droite .auteur{
+    color: #228BFF;
+
+  }
+}

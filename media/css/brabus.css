@@ -1,0 +1,95 @@
+/*header brabus marge*/
+.mrgbrabus{
+    padding: 0.3rem;
+    background-color:#000000;
+}
+
+/*logo de la marque*/
+.logobrabus{
+    width: 30%;
+    height: auto;
+}
+
+/* main*/
+main{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+}
+main img{
+    transition: transform 0.3s ease;
+    border-radius:2rem;
+}
+main img:hover{
+   transform: scale(1.08);
+}
+.contenu{
+    padding: 2rem;
+    text-align: left;
+    border-radius: 2rem;
+    border: 0.4rem solid #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    color: white;
+    background-color:  #2B2B2B;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+.image{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*citation fin de page*/
+
+.citation{
+     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.5em;
+    padding: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    text-align: center;
+    border: 0.2rem solid #000000;
+    margin-bottom: 5rem;
+}
+
+
+@media(max-width : 393px){
+    .logobrabus{
+        width: 20px;
+    }
+    main{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    main img{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: auto;
+    }
+    .image{
+         text-align: center;
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+    }
+    .contenu{
+        font-size: 0.7em;
+        margin: 5px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .citation{
+        width: 80%;
+        margin-top: 40px;
+        font-size: 0.7em;
+    }
+}

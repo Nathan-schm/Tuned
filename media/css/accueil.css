@@ -1,0 +1,152 @@
+/*header, marge*/
+.marge{
+    padding: 0.3rem;
+    background-color:#D9D9D9;
+}
+
+/* menu avec 4 image */
+
+.menu{
+    width: 100%;
+    background-color: #2B2B2B;
+    display: flex;
+    justify-content: center;
+    padding: 0.7rem;
+}
+.menu  img {
+    padding: 0.1rem;
+    width: 24%;
+    height: auto;
+}
+
+
+/* contenu central */
+.contenu_central{
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+/* hover sur les bouton centraux */
+
+.Brabus_nav:hover{
+    transform: scale(1.03);
+}
+.Mansory_nav:hover{
+    transform: scale(1.03);
+}
+.Abt_nav:hover{
+    transform: scale(1.03);
+}
+.Amg_nav:hover{
+    transform: scale(1.03);
+}
+
+/* haut, brabus et mansory*/
+
+.contenu_haut{
+    display: flex;
+}
+
+.Brabus_nav{
+    transition: transform 0.3s ease;
+    background-color: #2B2B2B;
+    border-radius: 2rem;
+    border: 0.4rem solid #000000;
+    text-align: center;
+    color: white;
+   font-size: 1.6em;
+    margin:3rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.Mansory_nav{
+    transition: transform 0.3s ease;
+    background-color: #2B2B2B;
+    border-radius:  2rem;
+    border: 0.4rem solid #D2B55B;
+    text-align: center;
+    color: white;
+   font-size: 1.6em;
+    margin:3rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+/* bas, abt et amg*/
+
+.contenu_bas{
+    display: flex;
+}
+
+.Abt_nav{
+    transition: transform 0.3s ease;
+    background-color: #2B2B2B;
+    border-radius:  2rem;
+    border: 0.4rem solid #228BFF;
+    text-align: center;
+    color: white;
+    font-size: 1.6em;
+    margin:3rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+.Amg_nav{
+    transition: transform 0.3s ease;
+    background-color: #2B2B2B;
+    border-radius:  2rem;
+    border: 0.4rem solid #FF2E2E;
+    text-align: center;
+    color: white;
+   font-size: 1.6em;
+    margin:3rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+
+@media (max-width: 393px){
+.menu img{
+    width: 23%;
+    }
+.menu .image{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.contenu_haut,
+  .contenu_bas {
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+  .Brabus_nav img,
+  .Mansory_nav img,
+  .Abt_nav img,
+  .Amg_nav img {
+    width: 80%;
+    height: auto;
+  }
+
+
+  .Brabus_nav,
+  .Mansory_nav,
+  .Abt_nav,
+  .Amg_nav {
+    margin: 20px 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 20px;
+  }
+
+  .contenu_central {
+    padding: 20px;
+  }
+
+}
